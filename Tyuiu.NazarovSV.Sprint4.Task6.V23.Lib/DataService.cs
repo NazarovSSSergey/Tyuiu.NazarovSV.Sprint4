@@ -5,8 +5,8 @@ namespace Tyuiu.NazarovSV.Sprint4.Task6.V23.Lib
     {
         public int Calculate(string[] array)
         {
-            string[] progs = new string[] { "Microsoft", "Google", "Apple", "Amazon", "Facebook", "Tesla", "Netflix" };
-            return progs.Count(n => n.Length == 6);
+            string[] progs = Array.FindAll(array, n => n.Length == 6);
+            return progs.Count();
         }
     }
 }
